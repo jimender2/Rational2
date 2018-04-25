@@ -10,6 +10,23 @@ public class Rational {
 	private int denominator;
 	
 	/**
+	 * This constructor sets the values to values that are valid and 
+	 * that will make the getDecimal() = 0
+	 */
+	public Rational() {
+		 numerator = 0;
+		 denominator = 1;
+	 }
+	
+	public Rational(String num, String den) {
+		numerator = Integer.parseInt(num);
+		denominator = Integer.parseInt(den);
+		if (denominator == 0) {
+			denominator = 1;
+		}
+	}
+	
+	/**
 	 * The setNumerator method stores a value in
 	 * the numerator field
 	 * @param num The value to store in numerator
@@ -34,6 +51,21 @@ public class Rational {
 	 */
 	public void setDenominator(int den){
 		denominator = den;
+		if (denominator == 0) {
+			denominator = 1;
+		}
+	}
+	
+	/**
+	 * The setDenominator method stores a value in
+	 * the denominator field
+	 * @param den The value to store in denominator
+	 */
+	public void setDenominator(String den){
+		denominator = Integer.parseInt(den);
+		if (denominator == 0) {
+			denominator = 1;
+		}
 	}
 	
 	/**
