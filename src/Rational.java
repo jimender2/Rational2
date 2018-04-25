@@ -19,6 +19,15 @@ public class Rational {
 	}
 	
 	/**
+	 * The setNumerator method stores a value in
+	 * the numerator field
+	 * @param num The value to store in numerator
+	 */
+	public void setNumerator(String num) {
+		numerator = Integer.parseInt(num);
+	}
+	
+	/**
 	 * The setDenominator method stores a value in
 	 * the denominator field
 	 * @param den The value to store in denominator
