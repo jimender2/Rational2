@@ -18,6 +18,26 @@ public class Rational {
 		 denominator = 1;
 	 }
 	
+	/**
+	 * This constructor sets the values to the values passed in as 
+	 * parameters
+	 * @param num The value to store in numerator
+	 * @param den The value to store in denominator
+	 */
+	public Rational(int num, int den) {
+		numerator = num;
+		denominator = den;
+		if (denominator == 0) {
+			denominator = 1;
+		}
+	}
+	
+	/**
+	 * This constructor sets the values to the values passed in as 
+	 * parameters
+	 * @param num The value to store in numerator
+	 * @param den The value to store in denominator
+	 */
 	public Rational(String num, String den) {
 		numerator = Integer.parseInt(num);
 		denominator = Integer.parseInt(den);
