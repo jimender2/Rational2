@@ -3,7 +3,7 @@ public class test {
 
 	public static void main(String[] args) {
 		Rational rat = new Rational();
-		rat.setDenominator(9);
+		rat.setDenominator(0);
 		rat.setNumerator(100);
 		System.out.println(rat.getNumerator());
 		System.out.println(rat.getDenominator());
